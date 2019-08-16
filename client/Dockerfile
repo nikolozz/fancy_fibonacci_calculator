@@ -1,7 +1,7 @@
 FROM node:alpine as builder 
 WORKDIR /app
 COPY ./package.json .
-RUN npm intall --silent
+RUN npm intall
 COPY . . 
 RUN npm run build
 
